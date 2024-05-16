@@ -1,7 +1,7 @@
-package com.colak.springjpamanytoonetutorial.bidirectional.service;
+package com.colak.springjpatutorial.unidirectional.service;
 
-import com.colak.springjpamanytoonetutorial.bidirectional.jpa.Address;
-import com.colak.springjpamanytoonetutorial.bidirectional.repository.AddressRepository;
+import com.colak.springjpatutorial.unidirectional.jpa.Address;
+import com.colak.springjpatutorial.unidirectional.repository.AddressRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

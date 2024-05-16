@@ -1,6 +1,6 @@
-package com.colak.springjpamanytoonetutorial.bidirectional.service;
+package com.colak.springjpatutorial.unidirectional.service;
 
-import com.colak.springjpamanytoonetutorial.bidirectional.jpa.Address;
+import com.colak.springjpatutorial.unidirectional.jpa.Address;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

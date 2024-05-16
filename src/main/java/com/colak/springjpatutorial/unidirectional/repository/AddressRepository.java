@@ -1,6 +1,6 @@
-package com.colak.springjpamanytoonetutorial.bidirectional.repository;
+package com.colak.springjpatutorial.unidirectional.repository;
 
-import com.colak.springjpamanytoonetutorial.bidirectional.jpa.Address;
+import com.colak.springjpatutorial.unidirectional.jpa.Address;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

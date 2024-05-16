@@ -1,13 +1,13 @@
-package com.colak.springjpamanytoonetutorial;
+package com.colak.springjpatutorial;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringJpaManytooneTutorialApplication {
+public class SpringJpaTutorialApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringJpaManytooneTutorialApplication.class, args);
+		SpringApplication.run(SpringJpaTutorialApplication.class, args);
 	}
 
 }
