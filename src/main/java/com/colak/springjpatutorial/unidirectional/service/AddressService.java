@@ -16,4 +16,5 @@ public class AddressService {
     Page<Address> findByStudentId(Long studentId, Pageable pageable) {
         return addressRepository.findByStudentId(studentId, pageable);
     }
+
 }

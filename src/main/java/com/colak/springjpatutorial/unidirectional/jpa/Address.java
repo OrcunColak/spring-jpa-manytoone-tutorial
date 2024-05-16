@@ -1,6 +1,7 @@
 package com.colak.springjpatutorial.unidirectional.jpa;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -21,8 +22,10 @@ public class Address {
     private Long id;
 
     private String city;
+
     private String zipCode;
 
-    @ManyToOne
+    // Default fetch is EAGER
+    @ManyToOne(fetch = FetchType.LAZY)
     private Student student;
 }
