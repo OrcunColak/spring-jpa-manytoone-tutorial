@@ -11,6 +11,7 @@ import lombok.Setter;
 
 @Entity
 @Table(name = "address")
+
 @Getter
 @Setter
 public class Address {
@@ -24,5 +25,4 @@ public class Address {
 
     @ManyToOne
     private Student student;
-
 }

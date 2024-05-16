@@ -10,6 +10,7 @@ import lombok.Setter;
 
 @Entity
 @Table(name = "student")
+
 @Getter
 @Setter
 public class Student {
@@ -21,6 +22,4 @@ public class Student {
     private String name;
     private int age;
     private String mobile;
-
-
 }
