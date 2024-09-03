@@ -7,6 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
@@ -22,5 +23,11 @@ class AddressServiceTest {
     void testFindByStudentId() {
         Page<Address> result = addressService.findByStudentId(1L, Pageable.ofSize(1));
         assertEquals(1, result.getTotalPages());
+    }
+
+    @Test
+    void assignStudent() {
+        Address address = addressService.assignStudent(1L, 2L);
+        assertThat(address.getStudent().getId()).isEqualTo(2L);
     }
 }
