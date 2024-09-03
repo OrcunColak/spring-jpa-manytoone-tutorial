@@ -31,6 +31,7 @@ public class AddressService {
                 .orElseThrow(EntityNotFoundException::new);
 
         // Get a proxy
+        // Similar to "entityManager.getReference(Student.class, studentId);"
         Student studentProxy = studentRepository.getReferenceById(studentId);
 
         address.setStudent(studentProxy);
