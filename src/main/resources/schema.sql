@@ -1,0 +1,14 @@
+CREATE TABLE student (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    age INT NOT NULL,
+    mobile VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE address (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    city VARCHAR(255) NOT NULL,
+    zip_code VARCHAR(255) NOT NULL,
+    student_id BIGINT,
+    FOREIGN KEY (student_id) REFERENCES student(id)
+);

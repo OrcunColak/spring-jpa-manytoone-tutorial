@@ -15,11 +15,12 @@ class AddressServiceTest {
     @Autowired
     private AddressService addressService;
 
-    // select * from address a1_0 left join student s1_0 on s1_0.id=a1_0.student_id where s1_0.id=? offset ? rows fetch first ? rows only
+    // select * from address a left join student s on s.id=a.student_id where s.id=? offset ? rows fetch first ? rows only
+    // select count(a.id) from address a where a.student_id=?
 
     @Test
     void testFindByStudentId() {
         Page<Address> result = addressService.findByStudentId(1L, Pageable.ofSize(1));
-        assertEquals(0, result.getTotalPages());
+        assertEquals(1, result.getTotalPages());
     }
 }
