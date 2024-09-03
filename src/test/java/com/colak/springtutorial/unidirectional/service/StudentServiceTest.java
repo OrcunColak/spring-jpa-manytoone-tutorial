@@ -1,13 +1,12 @@
-package com.colak.springjpatutorial.unidirectional.service;
+package com.colak.springtutorial.unidirectional.service;
 
-import com.colak.springjpatutorial.unidirectional.jpa.Address;
-import com.colak.springjpatutorial.unidirectional.jpa.Student;
+import com.colak.springtutorial.unidirectional.jpa.Address;
+import com.colak.springtutorial.unidirectional.jpa.Student;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class StudentServiceTest {

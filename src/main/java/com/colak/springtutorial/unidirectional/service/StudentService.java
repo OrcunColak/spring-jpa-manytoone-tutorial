@@ -1,9 +1,9 @@
-package com.colak.springjpatutorial.unidirectional.service;
+package com.colak.springtutorial.unidirectional.service;
 
-import com.colak.springjpatutorial.unidirectional.jpa.Address;
-import com.colak.springjpatutorial.unidirectional.jpa.Student;
-import com.colak.springjpatutorial.unidirectional.repository.AddressRepository;
-import com.colak.springjpatutorial.unidirectional.repository.StudentRepository;
+import com.colak.springtutorial.unidirectional.jpa.Address;
+import com.colak.springtutorial.unidirectional.jpa.Student;
+import com.colak.springtutorial.unidirectional.repository.AddressRepository;
+import com.colak.springtutorial.unidirectional.repository.StudentRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

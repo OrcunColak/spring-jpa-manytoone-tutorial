@@ -1,13 +1,13 @@
-package com.colak.springjpatutorial;
+package com.colak.springtutorial;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringJpaTutorialApplication {
+public class SpringTutorialApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringJpaTutorialApplication.class, args);
+		SpringApplication.run(SpringTutorialApplication.class, args);
 	}
 
 }

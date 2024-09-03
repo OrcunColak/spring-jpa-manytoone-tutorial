@@ -1,4 +1,4 @@
-package com.colak.springjpatutorial.unidirectional.jpa;
+package com.colak.springtutorial.unidirectional.jpa;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
