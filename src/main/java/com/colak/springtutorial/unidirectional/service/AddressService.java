@@ -18,6 +18,11 @@ public class AddressService {
     private final AddressRepository addressRepository;
     private final StudentRepository studentRepository;
 
+    @Transactional
+    public Address save(Address address) {
+        return addressRepository.save(address);
+    }
+
     @Transactional(readOnly = true)
     public Page<Address> findByStudentId(Long studentId, Pageable pageable) {
         return addressRepository.findByStudentId(studentId, pageable);

@@ -1,5 +1,6 @@
 package com.colak.springtutorial.unidirectional.jpa;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -26,6 +27,6 @@ public class Address {
     private String zipCode;
 
     // Default fetch is EAGER
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY , cascade = CascadeType.ALL)
     private Student student;
 }

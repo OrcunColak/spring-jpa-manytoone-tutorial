@@ -1,6 +1,7 @@
 package com.colak.springtutorial.unidirectional.service;
 
 import com.colak.springtutorial.unidirectional.jpa.Address;
+import com.colak.springtutorial.unidirectional.jpa.Student;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -29,5 +30,24 @@ class AddressServiceTest {
     void assignStudent() {
         Address address = addressService.assignStudent(1L, 2L);
         assertThat(address.getStudent().getId()).isEqualTo(2L);
+    }
+
+    // When address is saved student is also saved
+    @Test
+    void saveAddressAndStudent() {
+        Address address = new Address();
+        address.setCity("Ankara");
+        address.setZipCode("06530");
+
+        Student student = new Student();
+        student.setName("Orçun");
+        student.setAge(48);
+        student.setMobile("0532");
+        address.setStudent(student);
+
+        Address savedAddress = addressService.save(address);
+        Student savedAddressStudent = savedAddress.getStudent();
+
+        assertThat(savedAddressStudent.getId()).isNotNull();
     }
 }
